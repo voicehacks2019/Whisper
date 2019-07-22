@@ -3,6 +3,16 @@ const CONTENT = require("./content");
 const GET_REMOTE = require('./lib/getRemoteContent.js')
 var console = require ('console')
 
+var months = [
+  [1, "Jan"],
+  [2, "Feb"],
+  [3, "Mar"],
+  [4, "Apr"],
+  [5, "May"],
+  [6, "Jun"],
+  [7, "Jul"],
+]
+
 // GetContent
 exports.function = function (searchTerm, track, dateTimeExpression) {
   //You can replace with a call to a web api - make sure you map api response to content model
@@ -10,44 +20,8 @@ exports.function = function (searchTerm, track, dateTimeExpression) {
   var chosenContent;
   
   console.log("Track = " + track)
-  console.log("Date = " + dateTimeExpression.date)
-  
-
-  // Hard coded searchTerm example to content retrieval from an API
-  if (searchTerm && searchTerm.toLowerCase() == 'dad') {
-    var dadJoke = GET_REMOTE.getDadJoke();
-    
-    // Add a random dad image
-    var dadImages = ['images/dad1.png', 'images/dad2.png', 'images/dad3.png'];
-    var image = dadImages[Math.floor(dadImages.length * Math.random())]
-
-   return {
-      text: dadJoke,
-      image: {
-        url: image
-      }
-    }
-  } else {
-    // Get content from local content.js file 
-    // filter based on searchTerm (note that if you use a web API, then filtering can be done in the web API itself)
-    if (searchTerm) {
-      content = UTIL.findContent(content, searchTerm)
-    }
-
-    //pick a random content
-    if (content.length) {
-      var index = Math.floor(content.length * Math.random())
-      chosenContent = content[index]
-    }
-  }
-  
-  // return content if exists, else null (No Result)
-  if (chosenContent) {
-    return {
-      text: chosenContent.text,
-      image: chosenContent.image
-    }
-  } else {
-    return null;
-  }
+  console.log("Date = " + dateTimeExpression.date.day)
+  console.log("month " + dateTimeExpression.date.month)
+  console.log("year " + dateTimeExpression.date.year)
+  //if date()
 }
