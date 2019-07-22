@@ -1,0 +1,555 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "voice summit",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SearchAgendaIntent",
+                    "slots": [
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "Track",
+                            "type": "Trackname",
+                            "samples": [
+                                "{Track}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I need to attend a session",
+                        "I need to attend a {Track} session on {Date} at {Time}",
+                        "I need to attend a {Track} session at {Time} on {Date}",
+                        "I need to attend a {Track} session",
+                        "I need to attend a session about {Track}",
+                        "I need to attend a session related to {Track}",
+                        "I need to attend a {Track} session at {Time}",
+                        "I need to attend a {Track} related session at {Time}",
+                        "I need to attend a session at {Time} related to {Track}",
+                        "I need to attend a session at {Time} about {Track}",
+                        "I need to attend a session on {Date} at {Time}",
+                        "I need to attend a session at {Time}",
+                        "I need to attend a {Time} session",
+                        "I need to attend a {Track} session on {Date}",
+                        "I need to attend a session on {Date} about {Track}",
+                        "I need to attend a session on {Date} relating to {Track}",
+                        "Attend a session",
+                        "attend a {Track} session on {Date} at {Time}",
+                        "attend a {Track} session at {Time} on {Date}",
+                        "attend a {Track} session",
+                        "attend a session about {Track}",
+                        "attend a session related to {Track}",
+                        "attend a {Track} session at {Time}",
+                        "attend a {Track} related session at {Time}",
+                        "attend a session at {Time} related to {Track}",
+                        "attend a session at {Time} about {Track}",
+                        "attend a session on {Date} at {Time}",
+                        "attend a session at {Time}",
+                        "attend a {Time} session",
+                        "attend a {Track} session on {Date}",
+                        "attend a session on {Date} about {Track}",
+                        "attend a session on {Date} relating to {Track}",
+                        "attend a session",
+                        "attend a {Track} session on {Date} at {Time}",
+                        "attend a {Track} session",
+                        "attend a {Track} session at {Time}",
+                        "attend a session on {Date} at {Time}",
+                        "attend a session at {Time}",
+                        "attend a {Track} session on {Date}",
+                        "Show me available sessions",
+                        "Show me sessions",
+                        "Show me workshops",
+                        "Show me events",
+                        "Show me Meetups",
+                        "I want to attend a session",
+                        "I want to attend session",
+                        "find workshops",
+                        "find me workshops",
+                        "find seminars",
+                        "find me seminars",
+                        "give me the sessions at {Time} for {Track} on {Date}",
+                        "I want to find a session",
+                        "I want to find a workshop",
+                        "Find a session",
+                        "Find a workshop",
+                        "I need a session on {Date} at {Time} for {Track}",
+                        "Where can I find the session closest to {Date}",
+                        "Can you find a session on {Date} at {Time} for {Track}",
+                        "I need you to find a session on {Date} at {Time} for {Track}",
+                        "Find me a session on {Date} at {Time} for {Track}",
+                        "Find the {Track} sessions near me",
+                        "I need {Track} workshops",
+                        "I want to attend a {Track} workshop",
+                        "I want to attend a {Track} workshop on {Date}",
+                        "I want to attend a {Track} workshop on {Date} at {Time}",
+                        "Where I can find {Track} sessions on {Date} at {Time}",
+                        "Where I can find {Track} sessions",
+                        "Where I can find {Track} sessions at {Time}",
+                        "Where I can find sessions on {Date} at {Time}",
+                        "Where I can find sessions at {Time}",
+                        "Where I can find {Track} sessions on {Date}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Trackname",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Accessibility"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advertising"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Agencies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIDevCon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alexa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Analytics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Assistants"
+                            }
+                        },
+                        {
+                            "id": "MachineLearning",
+                            "name": {
+                                "value": "AudioData"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Breakout"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Briefing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Broadcasting"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CaseStudy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Commerce"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ConversationalDesign"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Data"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Demo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Design"
+                            }
+                        },
+                        {
+                            "id": "Development",
+                            "name": {
+                                "value": "Design"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DevConAI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Development"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Education"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Enterprise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Entertainment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ExecutiveBriefing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fintech"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gaming"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Google"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hackathon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Healthcare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hospitality"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Inclusion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Insurance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Interview"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Investors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jobs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Keynote"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Localization"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MainStage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Marketing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Marketing:UX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Media"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Multimodal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OpenSource"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Panel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pre-Conference"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Privacy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ProductDevelopment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ProductManagement"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Reception"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Recruiting"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Research"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Search"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Security"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SmartCities"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SMB"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SonicBranding"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SpecialEvent"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sponsored"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sponsored:Talk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Startups"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strategey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strategy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Talk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Training"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Transportation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VEDTalk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VirtualAssistants"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VoiceAssistants"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WEC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Workshop"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SearchAgendaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.447003149181.525277825818"
+                            }
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.447003149181.16147651717"
+                            }
+                        },
+                        {
+                            "name": "Track",
+                            "type": "Trackname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.447003149181.72291017745"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.447003149181.525277825818",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please, give me the day you want"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.447003149181.16147651717",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What time?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.447003149181.72291017745",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In which track?"
+                    }
+                ]
+            }
+        ]
+    }
+}
