@@ -1,12 +1,17 @@
 const UTIL = require("./lib/util");
 const CONTENT = require("./content");
 const GET_REMOTE = require('./lib/getRemoteContent.js')
+var console = require ('console')
 
 // GetContent
-exports.function = function (searchTerm) {
+exports.function = function (searchTerm, track) {
   //You can replace with a call to a web api - make sure you map api response to content model
   var content = CONTENT
-  var chosenContent
+  var chosenContent;
+  
+  console.log("Track = " + track)
+  
+  
 
   // Hard coded searchTerm example to content retrieval from an API
   if (searchTerm && searchTerm.toLowerCase() == 'dad') {

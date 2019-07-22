@@ -5,6 +5,10 @@ action (GetContent) {
       type (SearchTerm)
       min (Optional) max (One)
     }
+    input (track) {
+      type (Track)
+      min (Optional) max (One)
+    }
   }
   output (Content)
 }

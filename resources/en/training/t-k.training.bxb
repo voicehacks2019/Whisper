@@ -1,0 +1,5 @@
+train (t-klxk665twjz2i3932xvusmczs) {
+  utterance ("[g:GetContent] Find a (dog)[v:SearchTerm] and a (track)[v:Track]")
+  plan (Y2BhEEmtSMwtyEnVS0tMLtFzzs8rSc0rYRBHEXVPLcEuEZyaWJScEZJalMsghCIRUpSYnM3AzMDIwAQkGYA0CEIAXBQA)
+  last-modified (1563812615945)
+}
