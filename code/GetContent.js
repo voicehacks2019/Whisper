@@ -4,13 +4,13 @@ const GET_REMOTE = require('./lib/getRemoteContent.js')
 var console = require ('console')
 
 // GetContent
-exports.function = function (searchTerm, track) {
+exports.function = function (searchTerm, track, dateTimeExpression) {
   //You can replace with a call to a web api - make sure you map api response to content model
   var content = CONTENT
   var chosenContent;
   
   console.log("Track = " + track)
-  
+  console.log("Date = " + dateTimeExpression.date)
   
 
   // Hard coded searchTerm example to content retrieval from an API

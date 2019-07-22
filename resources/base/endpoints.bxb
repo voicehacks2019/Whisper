@@ -1,7 +1,7 @@
 endpoints {
   action-endpoints {
     action-endpoint (GetContent) {
-      accepted-inputs (searchTerm, track)
+      accepted-inputs (searchTerm, track, dateTimeExpression)
       local-endpoint (GetContent.js)
     }
   }

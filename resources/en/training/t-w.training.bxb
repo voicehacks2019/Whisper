@@ -1,0 +1,5 @@
+train (t-wx293kh4pil223tbdt7jj6cdx) {
+  utterance ("[g:GetContent] tell me a fact a out (dogs)[v:SearchTerm] from (track)[v:Track] that happened (last wednesday)[v:viv.time.DateTimeExpression]")
+  plan (Y2BlEEmtSMwtyEnVS0tMLtFzzs8rSc0rYRBHEXVPLcEuEZyaWJScEZJalMsghCIRUpSYnM0gXZZZpleSmZuq55JYkhoCZLhWFBSlFhdn5ucxsDAwMjAxMANpBiALAmEASQ4A)
+  last-modified (1563818514175)
+}

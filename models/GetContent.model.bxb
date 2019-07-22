@@ -9,6 +9,10 @@ action (GetContent) {
       type (Track)
       min (Optional) max (One)
     }
+    input(dateTimeExpression) {
+      type(time.DateTimeExpression)
+      min (Optional) max (One)
+    }
   }
   output (Content)
 }

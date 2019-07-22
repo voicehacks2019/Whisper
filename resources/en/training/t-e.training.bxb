@@ -1,0 +1,5 @@
+train (t-ehm3ihwxo9b184c11oqp544rc) {
+  utterance ("[g:GetContent] Tell me a fact about (dogs)[v:SearchTerm] that happened (last Wednesday)[v:viv.time.DateTimeExpression]")
+  plan (Y2BhEEmtSMwtyEnVS0tMLtFzzs8rSc0rYRBHEXVPLcEuEZyaWJScEZJalMsgXZZZpleSmZuq55JYkhoCZLhWFBSlFhdn5ucxMDMwMjABSQYgDYIQABcFAA==)
+  last-modified (1563818174908)
+}
